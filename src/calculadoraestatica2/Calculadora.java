@@ -9,7 +9,7 @@ package calculadoraestatica2;
  * @author usuario
  */
 
-public class Calculadora {
+public class Calculadora extends SuperClassMultiDiv implements InterfaceOperaciones {
 
     private int resultado;
    
@@ -27,27 +27,16 @@ public class Calculadora {
         this.resultado = resultado;
     }
     
+    @Override
     public int sumar(int sumando1, int sumando2) {
         return sumando1 + sumando2;
     }
 
-    public static int restar(int restando1, int restando2) {
+    @Override
+    public int restar(int restando1, int restando2) {
         return restando1 - restando2;
     }
 
-    public static int multiplicar(int operador1, int operador2) {
-        return operador1 * operador2;
-    }
-
-    public static int dividir(int operador1, int operador2) {
-        validarDivisor(operador2); 
-        return operador1 / operador2;
-    }
-
-    public static int modulo(int operador1, int operador2) {
-        validarDivisor(operador2);
-        return operador1 % operador2;
-    }
     
     private static void validarDivisor(int valorCompr){
         if (valorCompr==0) {
