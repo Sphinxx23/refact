@@ -2,16 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package calculadora;
+package calculadoraestatica2;
 
 /**
  *
  * @author usuario
  */
-public class Sumar {
+public class Multiplicar {
     
-    public static int sumar(int a, int b) {
-        return a + b;
+    public static int multiplicar(int a, int b) {
+        return a * b;
     }
     
 }
