@@ -27,30 +27,30 @@ public class Calculadora {
         this.resultado = resultado;
     }
     
-    public int sumar(int a, int b) {
-        return a + b;
+    public int sumar(int sumando1, int sumando2) {
+        return sumando1 + sumando2;
     }
 
-    public static int restar(int a, int b) {
-        return a - b;
+    public static int restar(int restando1, int restando2) {
+        return restando1 - restando2;
     }
 
-    public static int multiplicar(int a, int b) {
-        return a * b;
+    public static int multiplicar(int operador1, int operador2) {
+        return operador1 * operador2;
     }
 
-    public static int dividir(int a, int b) {
-        validarDivisor(b); 
-        return a / b;
+    public static int dividir(int operador1, int operador2) {
+        validarDivisor(operador2); 
+        return operador1 / operador2;
     }
 
-    public static int modulo(int a, int b) {
-        validarDivisor(b);
-        return a % b;
+    public static int modulo(int operador1, int operador2) {
+        validarDivisor(operador2);
+        return operador1 % operador2;
     }
     
-    private static void validarDivisor(int b){
-        if (b==0) {
+    private static void validarDivisor(int valorCompr){
+        if (valorCompr==0) {
             throw new ArithmeticException("Division por ceero");
         }
     }
